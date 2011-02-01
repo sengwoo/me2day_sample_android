@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="delete_menu">
+        <item>@string/delete</item>
+        <item>@string/cancel</item>
+    </string-array>
+    <string-array name="click_author_menu">
+        <item>@string/go_person</item>
+        <item>@string/write_mention</item>
+        <item>@string/write_mailet</item>
+    </string-array>
+    <string-array name="click_author_menu2">
+        <item>@string/go_person</item>
+        <item>@string/write_mention</item>
+    </string-array>
+    <string-array name="click_owner_menu">
+        <item>@string/write_mention</item>
+        <item>@string/write_mailet</item>
+    </string-array>
+    <string-array name="click_owner_menu2">
+        <item>@string/write_mention</item>
+    </string-array>
+    <string-array name="alltogether_menu">
+        <item>@string/setting_my_post</item>
+        <item>@string/setting_friend_post</item>
+        <item>@string/setting_friend_metoo</item>
+        <item>@string/setting_recall_friend</item>
+        <item>@string/setting_get_comment_friend</item>
+        <item>@string/main_tab_4</item>
+        <item>@string/pinfriend</item>
+		<item>@string/metoo_band</item>
+<!-- 	<item>@string/metoo_band_select</item>  -->
+    </string-array>
+    <string-array name="global_menu">
+        <item>@string/main_tab_1</item>
+        <item>@string/main_tab_2</item>
+        <item>@string/allfriend</item>
+        <item>@string/main_tab_4</item>
+        <item>@string/main_tab_6</item>
+        <item>@string/smsfriend</item>
+        <item>@string/pinfriend</item>
+        <item>@string/alltogether_friend</item>
+    </string-array>
+    <string-array name="post_context_menu">
+        <item>@string/comment_action</item>
+        <item>@string/metoo_action</item>
+    </string-array>
+    <string-array name="post_context_menu2">
+        <item>@string/metoo_action</item>
+    </string-array>
+    <string-array name="my_post_context_menu">
+        <item>@string/comment_action</item>
+    </string-array>
+    <string-array name="mailet_context_menu">
+        <item>@string/reply</item>
+    </string-array>
+    <string-array name="mediaupload_context_menu">
+        <item>@string/photo_album</item>
+        <item>@string/photo_camera</item>
+        <item>@string/video_album</item>
+        <item>@string/video_camera</item>
+    </string-array>
+    <string-array name="mediaupload_context_menu2">
+        <item>@string/photo_album</item>
+        <item>@string/photo_camera</item>
+        <item>@string/video_album</item>
+        <item>@string/video_camera</item>
+        <item>@string/remove_file</item>
+    </string-array>
+    <string-array name="photoupload_context_menu">
+        <item>@string/photo_album</item>
+        <item>@string/photo_camera</item>
+    </string-array>
+    <string-array name="photoupload_context_menu2">
+        <item>@string/photo_album</item>
+        <item>@string/photo_camera</item>
+        <item>@string/remove_file</item>
+    </string-array>
+    <string-array name="noti_config_menu">
+        <item>@string/call_comment</item>
+        <item>@string/main_tab_4</item>
+    </string-array>
+    <string-array name="post_view_more_menu">
+        <item>@string/modify_tag</item>
+        <item>@string/delete_post</item>
+    </string-array>
+    <string-array name="mentioned_dialog_menu">
+        <item>@string/mentioned_all</item>
+        <item>@string/mentioned_reply</item>
+   		<item>@string/mentioned_remained</item>
+        <item>@string/mentioned_recall</item>
+   		<item>@string/mentioned_metoo</item>
+    </string-array>    
+    
+	
+    <!-- 
+    <string-array name="postview_owner_menu">
+        <item>@string/call_comment</item>
+        <item>@string/main_tab_4</item>
+    </string-array>
+            <string-array name="postview_other_menu">
+        <item>@string/call_comment</item>
+        <item>@string/main_tab_4</item>
+    </string-array>
+     -->    
+</resources>

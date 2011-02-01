@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="fontstyle_24">
+		<item name="android:textSize">24sp</item>
+	</style>
+	<style name="fontstyle_21_33">
+		<item name="android:textSize">21.33sp</item>
+	</style>
+	<style name="fontstyle_20">
+		<item name="android:textSize">20sp</item>
+	</style>
+	<style name="fontstyle_16">
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="fontstyle_14_67">
+		<item name="android:textSize">14.67sp</item>
+	</style>
+	<style name="fontstyle_13_33">
+		<item name="android:textSize">13.33sp</item>
+	</style>
+	<style name="fontstyle_12">
+		<item name="android:textSize">12sp</item>
+	</style>
+	<style name="fontstyle_10_67">
+		<item name="android:textSize">10.67sp</item>
+	</style>
+	<style name="fontstyle_10_67dp">
+		<item name="android:textSize">10.67dp</item>
+	</style>	
+	<style name="fontstyle_9_33">
+		<item name="android:textSize">9.33sp</item>
+	</style>
+	<style name="fontstyle_17_33">
+		<item name="android:textSize">17.33sp</item>
+	</style>	
+	
+	<style name="fontstyle_18_67_f2">
+		<item name="android:textSize">18.67dp</item>
+		<item name="android:textColor">#f2f2f2</item>	
+	</style>
+	
+	<style name="fontstyle_17_33_ff" parent="fontstyle_17_33">
+		<item name="android:textColor">#FFFFFF</item>
+	</style>	
+	<style name="fontstyle_17_33_0f" parent="fontstyle_17_33">
+		<item name="android:textColor">#0f0f0f</item>
+	</style>	
+	<style name="fontstyle_24_a" parent="fontstyle_24">
+		<item name="android:textColor">#b1b1b1</item>
+	</style>
+	<style name="fontstyle_21_33_d3" parent="fontstyle_21_33">
+		<item name="android:textColor">@color/solid_write_count</item>
+	</style>
+	<style name="fontstyle_20_ff" parent="fontstyle_20">
+		<item name="android:textColor">#ffffff</item>
+	</style>
+	<style name="fontstyle_16_a" parent="fontstyle_16">
+		<item name="android:textColor">#0f0f0f</item>
+	</style>
+	<style name="fontstyle_16_b" parent="fontstyle_16">
+		<item name="android:textColor">#b1b1b1</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+	</style>
+	<style name="fontstyle_16_bf" parent="fontstyle_16">
+		<item name="android:textColor">#bfbfbf</item>
+	</style>
+	<style name="fontstyle_16_80" parent="fontstyle_16">
+		<item name="android:textColor">#808080</item>
+	</style>
+	<style name="fontstyle_16_59" parent="fontstyle_16">
+		<item name="android:textColor">#5932b3</item>
+	</style>
+	<style name="fontstyle_16_47">
+		<item name="android:textSize">16.47sp</item>
+		<item name="android:textColor">#dcdcdc</item>
+	</style>		
+	<style name="fontstyle_16_00" parent="fontstyle_16">
+		<item name="android:textColor">#000000</item>
+	</style>		
+	<style name="fontstyle_14_67_a" parent="fontstyle_14_67">
+		<item name="android:textColor">#5932b3</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+	</style>
+	<style name="fontstyle_14_67_b" parent="fontstyle_14_67">
+		<item name="android:textColor">#5932b3</item>
+	</style>	
+	<style name="fontstyle_13_33_80" parent="fontstyle_13_33">
+		<item name="android:textColor">#808080</item>
+		<!-- <item name="android:textStyle">bold</item> -->
+	</style>
+	<style name="fontstyle_13_33_b" parent="fontstyle_13_33">
+		<item name="android:textColor">#6b6b6b</item>
+		<item name="android:textColorLink">#e65802</item>
+		<!-- <item name="android:textColorLink">@color/list_link_backgroundcolor_selector</item>  -->		
+	</style>
+	<style name="fontstyle_13_33_15" parent="fontstyle_13_33">
+		<item name="android:textColor">#151515</item>
+	</style>
+	<style name="fontstyle_13_33_6b" parent="fontstyle_13_33">
+		<item name="android:textColor">#6b6b6b</item>
+	</style>
+	<style name="fontstyle_13_33_dc" parent="fontstyle_13_33">
+		<item name="android:textColor">#dcdcdc</item>
+	</style>
+	<style name="fontstyle_13_33_a" parent="fontstyle_13_33">
+		<item name="android:textColor">#5932b3</item>
+	</style>
+	
+	<style name="fontstyle_12_a" parent="fontstyle_12">
+		<item name="android:textColor">#3a3a3a</item>
+	</style>
+	<style name="fontstyle_12_b" parent="fontstyle_12">
+		<item name="android:textColor">#fd5513</item>
+	</style>
+	<style name="fontstyle_12_80" parent="fontstyle_12">
+		<item name="android:textColor">#808080</item>
+	</style>
+	<style name="fontstyle_12_bf" parent="fontstyle_12">
+		<item name="android:textColor">#bfbfbf</item>
+	</style>
+	<style name="fontstyle_10_67_a" parent="fontstyle_10_67">
+		<item name="android:textColor">#636363</item>
+	</style>
+	<style name="fontstyle_pingback_author" parent="fontstyle_10_67">
+		<item name="android:textColor">#0f0f0f</item>
+		<!--  <item name="android:textColor">#0f0f0f</item> -->
+	</style>	
+	<style name="fontstyle_pingback_count" parent="fontstyle_10_67">
+		<item name="android:textColor">#666666</item>
+		<!--  <item name="android:textColor">#0f0f0f</item> -->
+	</style>	
+	<style name="fontstyle_10_67_b" parent="fontstyle_10_67">
+		<item name="android:textColor">#919191</item>
+	</style>
+	<style name="fontstyle_10_67_dd" parent="fontstyle_10_67">
+		<item name="android:textColor">#dddddd</item>
+	</style>
+	<style name="fontstyle_10_67_80" parent="fontstyle_10_67">
+		<item name="android:textColor">#808080</item>
+	</style>	
+	<style name="fontstyle_9_33_a" parent="fontstyle_9_33">
+		<item name="android:textColor">#ffffff</item>
+	</style>
+	<style name="fontstyle_9_33_b" parent="fontstyle_9_33">
+		<item name="android:textColor">#151515</item>		
+	</style>
+
+	<style name="style_timegroup" parent="fontstyle_12_a" />
+	<style name="style_title" parent="fontstyle_14_67">
+<!--		<item name="android:textColor">@color/list_titlecolor_selector</item> -->
+		<item name="android:textColor">@color/list_title_normal</item>
+		<item name="android:textColorLink">#e65802</item>
+	</style>
+	<style name="style_post_title" parent="fontstyle_16">
+<!--		<item name="android:textColor">@color/list_titlecolor_selector</item> -->
+		<item name="android:textColor">@color/list_title_normal</item>
+		<item name="android:textColorLink">#e65802</item>
+	</style>	
+	<style name="style_photoviewer_content" parent="fontstyle_13_33_dc">
+		<item name="android:textColorLink">#e65802</item>
+	</style>	
+	<style name="style_nickname" parent="fontstyle_10_67">
+<!-- 	<item name="android:textColor">@color/list_nicknamecolor_selector</item>  -->
+		<item name="android:textColor">@color/list_nickname_normal</item>
+	</style>
+	<style name="style_time"  parent="fontstyle_12">
+<!--		<item name="android:textColor">@color/list_timecolor_selector</item> -->
+		<item name="android:textColor">@color/list_time_normal</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+		
+	</style>
+	<style name="style_post_time"  parent="fontstyle_13_33">
+<!--		<item name="android:textColor">@color/list_timecolor_selector</item> -->
+		<item name="android:textColor">@color/list_time_normal</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+		
+	</style>	
+	<style name="style_comment_time"  parent="fontstyle_10_67">
+		<item name="android:textColor">@color/list_time_normal</item>	
+	</style>	
+	<style name="style_count"  parent="fontstyle_13_33_a" />
+	<style name="style_tag"  parent="fontstyle_12">
+<!-- 		<item name="android:textColor">@color/list_tagcolor_selector</item> -->
+		<item name="android:textColor">@color/list_tag_normal</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+		<item name="android:textColorLink">#e65802</item>
+	</style>
+	<style name="style_post_tag"  parent="fontstyle_13_33">
+<!-- 		<item name="android:textColor">@color/list_tagcolor_selector</item> -->
+		<item name="android:textColor">@color/list_tag_normal</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+		<item name="android:textColorLink">#e65802</item>
+	</style>	
+	<style name="style_metoo_user"  parent="fontstyle_12">
+		<item name="android:textColor">@color/dark_btn_text_disable</item>
+	</style>
+	<style name="style_mailet_to" parent="fontstyle_13_33_15">
+		<item name="android:textColorHint">#808080</item>
+	</style>
+	<style name="style_mediatype" parent="fontstyle_9_33_a"/>
+	<style name="style_main_title" parent="fontstyle_20_ff"/>
+	<!--  <style name="style_profile_title" parent="fontstyle_18_67_f2"/> -->
+	<style name="style_profile_title" parent="fontstyle_16_a"/>	
+	<style name="style_write_count" parent="fontstyle_21_33_d3"/>
+	<style name="style_tag_edit"  parent="fontstyle_13_33_80" />
+	<style name="style_personinfo_nickname" parent="fontstyle_16_bf" />
+	<style name="style_personinfo_id" parent="fontstyle_12_bf" />
+	<style name="style_personinfo_desc" parent="fontstyle_10_67_dd" />
+
+	<style name="style_home_menu" parent="fontstyle_13_33">
+		<item name="android:textColor">#392376</item>
+	</style>
+	<style name="style_login_id_edit" parent="fontstyle_16_00">
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="style_list_01">
+		<!--		<item name="android:dividerHeight">1px</item>-->
+		<!--		<item name="android:divider">#c8c8c8</item>-->
+		<!--		<item name="android:textColor">#000000</item>-->
+		<!--		<item name="android:background">#ffffff</item>-->
+		<!--		<item name="android:cacheColorHint">#ffffff</item>-->
+		<!--		<item name="android:shadowColor">#00ffffff</item>-->
+	</style>
+	<style name="common_list_guide">
+	  	<item name="android:fadingEdge">none</item>
+	</style>
+	<style name="style_main_list" parent="common_list_guide">
+		<item name="android:dividerHeight">0dp</item>
+		<item name="android:divider">@drawable/transparent_background</item>	
+		<item name="android:textColor">#000000</item>
+		<item name="android:background">#f5f5f5</item>
+		<item name="android:cacheColorHint">#f5f5f5</item>
+	  	<item name="android:listSelector">@drawable/common_list_selector</item>
+	</style>
+	<style name="style_post_list" parent="common_list_guide">
+		<item name="android:dividerHeight">0dp</item>
+		<item name="android:divider">@drawable/transparent_background</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:background">#efefef</item>
+		<item name="android:cacheColorHint">#efefef</item>
+		<item name="android:listSelector">@drawable/common_list_selector</item>
+	</style>	
+	<style name="style_endpost_list" parent="common_list_guide">
+		<item name="android:dividerHeight">0dp</item>
+		<item name="android:divider">@drawable/transparent_background</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:background">#efefef</item>
+		<item name="android:cacheColorHint">#efefef</item>		
+		<!-- <item name="android:background">#ffffff</item>  -->
+		<!-- <item name="android:cacheColorHint">#ffffff</item> -->
+		<item name="android:listSelector">@drawable/common_list_selector</item>
+	</style>	
+
+	<style name="style_text_01">
+		<!--
+			<item name="android:textSize">14sp</item> <item
+			name="android:textColor">#615e6a</item>
+		-->
+	</style>
+	<style name="style_text_02">
+		<!--
+			<item name="android:textSize">16sp</item> <item
+			name="android:textColor">#060019</item> <item
+			name="android:textColorLink">#fd5513</item>
+		-->
+	</style>
+	<style name="style_text_03">
+		<!--
+			<item name="android:textSize">14sp</item> <item
+			name="android:textColor">#5932b3</item>
+		-->
+	</style>
+	<style name="style_gallery_nickname">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#ffffff</item>
+		<!-- <item name="android:textStyle">bold</item> -->
+	</style>
+
+    <style name="Theme" parent="android:Theme">
+    </style>
+    <style name="Theme.Transparent">
+    	<item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+   <style name="Theme.NoShadow" parent="android:style/Theme.Black.NoTitleBar">
+       <item name="android:windowContentOverlay">@android:color/transparent</item> 
+    </style>
+	<style name="Me2dayTheme" parent="Theme.NoShadow">
+	</style>
+ 
+ 
+ 	<style name="style_list_pingback"  parent="fontstyle_10_67dp">
+<!--		<item name="android:textColor">@color/list_timecolor_selector</item> -->
+		<item name="android:textColor">#6B6B6B</item>
+		<!-- <item name="android:textStyle">bold</item>  -->
+		
+	</style>
+	
+	   
+</resources>

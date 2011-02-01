@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="red">#7f00</drawable>
+	<drawable name="blue">#770000ff</drawable>
+	<drawable name="green">#7700ff00</drawable>
+	<drawable name="yellow">#77ffff00</drawable>
+
+
+	<color name="list_divider">#c8c8c8</color>
+
+	<color name="solid_red">#f00</color>
+	<color name="solid_blue">#0000ff</color>
+	<color name="solid_green">#f0f0</color>
+	<color name="solid_yellow">#ffffff00</color>
+	<color name="solid_white">#ffffff</color>
+	<color name="gallery_bg">#b3b3b3</color>
+	<color name="solid_purple">#ff5932b3</color>
+	<color name="solid_gray">#ff808080</color>
+	<color name="alpha_purple">#aa6c49c0</color>
+	<color name="alpha_gray">#aa808080</color>
+	<color name="solid_black">#000000</color>
+	<color name="a70_black">#b2000000</color>
+	<color name="icon_picker_bg">#f2f2f3</color>
+	<color name="icon_picker_line">#e0e1df</color>
+	<color name="icon_picker_highlight">#9541fe</color>
+	<color name="list_normal">#efefef</color>
+	<color name="dark_btn_text_disable">#6b6b6b</color>
+	<color name="blue_btn_text_disable">#b9a5e1</color>
+	<color name="solid_write_count">#d3d3d3</color>
+	<color name="profile_line">#2e2e2e</color>
+	
+	<color name="link_normal">#fd5513</color>
+	<color name="link_bg_normal">#000000</color>
+	<color name="list_bg_hilight">#BFA5F5</color>
+	<color name="list_bg_pressed">#D9C9FB</color>
+	
+	<color name="list_title_normal">#0f0f0f</color>
+	<color name="list_tag_normal">#808080</color>
+	<color name="list_nickname_normal">#636363</color>
+	<color name="list_time_normal">#808080</color>
+	<color name="main_home_bg">#f5f5f5</color>
+	<color name="disable_color">#888888</color>
+	
+
+
+	<drawable name="list_normal">#efefef</drawable>
+	<drawable name="list_pressed">#b7b7b7</drawable>
+	<drawable name="list_highlight10">#ffd8c8fa</drawable>
+	<drawable name="list_highlight9">#e5d8c8fa</drawable>
+	<drawable name="list_highlight8">#ccd8c8fa</drawable>
+	<drawable name="list_highlight7">#afd8c8fa</drawable>
+	<drawable name="list_highlight6">#99d8c8fa</drawable>
+	<drawable name="list_highlight5">#7dd8c8fa</drawable>
+	<drawable name="list_highlight4">#66d8c8fa</drawable>
+	<drawable name="list_highlight3">#4bd8c8fa</drawable>
+	<drawable name="list_highlight2">#33d8c8fa</drawable>
+	<drawable name="list_highlight1">#19d8c8fa</drawable>
+    <drawable name="translucent_background">#b0000000</drawable>
+	<drawable name="transparent_background">#00000000</drawable>
+	
+	
+	
+	
+	
+	<drawable name="common_rect_normal">#00000000</drawable>	
+
+</resources>

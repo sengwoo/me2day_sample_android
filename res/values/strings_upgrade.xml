@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="upgrade_dialog_title">업데이트</string>
+	<string name="upgrade_dialog_body">새 버전이 있습니다.\n지금 업데이트하시겠습니까?</string>
+	<string name="upgrade_dialog_button_yes">예</string>
+	<string name="upgrade_dialog_button_no">아니요</string>
+	
+	<string name="upgrade_error_body">안드로이드 마켓에 연결할 수 없습니다.</string>
+	<string name="upgrade_error_button">확인</string>
+</resources>

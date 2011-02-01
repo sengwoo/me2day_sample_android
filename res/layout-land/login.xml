@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:gravity="center_horizontal" 
+	android:background="#f5f5f5">
+
+<!-- Start of Header Text -->
+	<LinearLayout android:id="@+id/login_header" 
+	  android:layout_width="fill_parent" 
+	  android:layout_height="40dp"
+	  android:background="@drawable/bg_top_blue_58px"
+	  android:orientation="vertical"
+	  android:gravity="center_vertical">  
+		<TextView android:id="@+id/login_title" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/login"
+			android:layout_marginLeft="13.33dp"
+			style="@style/style_main_title"/>
+	</LinearLayout> 
+<!-- End of Header Text -->
+	
+<!-- Start of Tab Body for OPEN ID-->	
+	<RelativeLayout android:id="@+id/logintab_openid_body"
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/login_header">
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scrollbars="vertical"
+		    android:fadingEdge="none">
+			<LinearLayout
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:scrollbars="vertical"> 
+				<TextView android:id="@+id/login_openid_label"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="@string/openid_addr" 
+					android:layout_marginTop="25.33dp"
+					android:layout_marginLeft="26.67dp" 
+					android:textSize="16sp" 
+					android:textColor="#0f0f0f"/>
+					
+				<RelativeLayout
+					android:layout_width="fill_parent" 
+					android:layout_height="50dp"
+					android:layout_marginTop="8dp"
+					android:layout_marginLeft="26.67dp"
+					android:layout_marginRight="26.67dp" 
+					android:layout_below="@+id/logintab_openid_label"> 
+	
+					<EditText android:id="@+id/login_openid_id" 
+						android:layout_width="fill_parent" 
+						android:layout_height="50dp"
+						android:paddingLeft="93dp" 
+						android:gravity="center_vertical" 
+						android:hint="" 
+						android:text=""
+						android:maxLines="1" 
+						android:singleLine="true"  
+						android:privateImeOptions="defaultInputmode=english;symbol=true;inputType=com.nhn.android.me2day" 
+						android:includeFontPadding="false" 
+						style="@style/style_login_id_edit"/>
+					<TextView 
+						android:layout_width="93dp" 
+						android:layout_height="48dp"
+						android:gravity="center_vertical" 
+						android:text="@string/metoo_addr_prefix" 
+						android:paddingLeft="13.33dp" 
+						android:textSize="13.33sp" 
+						android:textColor="#808080"/>
+				</RelativeLayout>
+					
+				<Button android:id="@+id/login_openid_button" 
+					android:text="@string/login" 
+					android:enabled="true"
+					android:layout_width="fill_parent" 
+					android:layout_height="47dp" 
+					android:textSize="17.33dp"
+					android:focusable="true" 
+					android:layout_marginTop="20dp"
+					android:layout_marginLeft="133.33dp" 
+					android:layout_marginRight="133.33dp" 
+					android:background="@drawable/selector_btn_dark" 
+					android:textColor="#ffffffff" 
+					android:includeFontPadding="false"/>
+			</LinearLayout>
+		</ScrollView>
+	</RelativeLayout>	 
+<!-- End of Tab Body for OPEN ID -->	
+
+</LinearLayout>

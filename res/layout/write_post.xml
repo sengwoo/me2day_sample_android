@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/content" android:isScrollContainer="true"
+	android:background="@color/solid_white">
+	<ImageView android:id="@+id/bg" android:layout_width="fill_parent"
+		android:layout_height="38.67dp" android:background="@drawable/bg_top_blue_58px" />
+	<ImageButton android:id="@+id/imagebutton"
+		android:background="@drawable/selector_btn_blue" android:layout_width="41.33dp"
+		android:layout_height="32dp" android:layout_marginTop="3.33dp"
+		android:layout_marginLeft="13.33dp" android:paddingLeft="1dp"
+		android:paddingRight="1dp" android:paddingBottom="1dp" android:adjustViewBounds="true"
+		android:src="@drawable/selector_icon_file_upload" android:scaleType="center"/>
+	<Button android:id="@+id/okbutton" android:layout_width="wrap_content"
+		android:text="@string/send" android:background="@drawable/selector_btn_blue"
+		android:layout_height="32dp" android:layout_marginTop="3.33dp"
+		android:layout_alignParentRight="true" android:layout_marginRight="13.33dp"
+		android:paddingLeft="10dp" android:paddingRight="10dp"
+		android:textColor="#ffffff" style="@style/fontstyle_16" />
+	<TextView android:id="@+id/editcount" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_toLeftOf="@+id/okbutton"
+		android:layout_marginRight="10dp" style="@style/style_write_count"
+		android:layout_marginTop="5dp" android:text="0" />
+	<EditText android:id="@+id/edit" android:layout_width="fill_parent"
+		android:privateImeOptions="inputType=com.nhn.android.me2day"
+		android:gravity="top|left" android:layout_height="fill_parent"
+		android:layout_below="@+id/bg" 
+		android:inputType="textMultiLine|textImeMultiLine" android:imeOptions="actionNext"
+		android:paddingBottom="45dp" />
+</RelativeLayout>
