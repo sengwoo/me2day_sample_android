@@ -114,26 +114,24 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int yellow=0x7f02001a;
     }
     public static final class id {
-        public static final int bg=0x7f08000f;
-        public static final int complete_view=0x7f080008;
-        public static final int content=0x7f08000e;
-        public static final int edit=0x7f080013;
-        public static final int editcount=0x7f080012;
-        public static final int imagebutton=0x7f080010;
-        public static final int layout_root=0x7f08000c;
+        public static final int bg=0x7f08000d;
+        public static final int complete_view=0x7f080006;
+        public static final int content=0x7f08000c;
+        public static final int edit=0x7f080011;
+        public static final int editcount=0x7f080010;
+        public static final int imagebutton=0x7f08000e;
+        public static final int layout_root=0x7f08000a;
         public static final int login_header=0x7f080000;
         public static final int login_openid_button=0x7f080004;
-        public static final int login_openid_id=0x7f080006;
         public static final int login_openid_label=0x7f080003;
         public static final int login_title=0x7f080001;
-        public static final int login_web=0x7f080007;
+        public static final int login_web=0x7f080005;
         public static final int logintab_openid_body=0x7f080002;
-        public static final int logintab_openid_label=0x7f080005;
-        public static final int logo_loginweb_loading=0x7f080009;
-        public static final int okbutton=0x7f080011;
-        public static final int progress=0x7f08000d;
-        public static final int progressbar=0x7f08000b;
-        public static final int title=0x7f08000a;
+        public static final int logo_loginweb_loading=0x7f080007;
+        public static final int okbutton=0x7f08000f;
+        public static final int progress=0x7f08000b;
+        public static final int progressbar=0x7f080009;
+        public static final int title=0x7f080008;
     }
     public static final class layout {
         public static final int login=0x7f030000;
