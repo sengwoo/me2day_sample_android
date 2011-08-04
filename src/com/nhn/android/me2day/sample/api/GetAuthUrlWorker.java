@@ -1,8 +1,6 @@
 package com.nhn.android.me2day.sample.api;
 
 import java.io.InputStream;
-import java.net.URLEncoder;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
@@ -10,8 +8,6 @@ import org.apache.http.HttpResponse;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-
-import android.util.Log;
 
 import com.nhn.android.me2day.sample.base.Utility;
 import com.nhn.android.me2day.sample.base.Me2dayInfo;
@@ -66,14 +62,12 @@ public class GetAuthUrlWorker {
 		returnUrl = null;
 		returnToken = null;
 	}
-	
+
 	/**
 	 * get_auth_url api
-	 * 미투데이 Id에 대해 로그인할 페이지를 얻는다.
-	 * @param userId - 미투데이 Id
+	 * 미투데이  로그인할 페이지를 얻는다.
 	 */
-	static public String get_auth_url(String userId) {
-		Utility.d(TAG, "Called get_auth_url(), userId=" + userId);
+	static public String get_auth_url() {
 		StringBuffer url = new StringBuffer();
 		url.append(Me2dayInfo.host).append("/api/get_auth_url.xml?");
 		Utility.appendSigUrl(url, false);

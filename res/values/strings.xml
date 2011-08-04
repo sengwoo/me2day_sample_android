@@ -12,7 +12,7 @@
 <!-- 	<string name="main_tab_7">관심태그</string>  -->
 	<string name="main_tab_8">설정</string>
 	<string name="main_tab_9">친구들과</string>
-	<string name="hometitile_friendrequest">친구신청</string>	
+	<string name="hometitile_friendrequest">친구신청</string>
 	<string name="etc">기타</string>
 	<string name="metoo">미투</string>
 	<string name="comment">댓글</string>
@@ -141,8 +141,8 @@
 	<string name="me2mobile_tag">me2mobile</string>
 	<!-- <string name="pingback_author">by %s [%s/%s]</string>  -->
 	<string name="pingback_author">by %s</string>
-	<string name="pingback_count">[%1$s/%2$s]</string>	
-	<string name="profile_send_mailet">쪽지보내기</string>	
+	<string name="pingback_count">[%1$s/%2$s]</string>
+	<string name="profile_send_mailet">쪽지보내기</string>
 	<string name="besides_friend_count">외 %d 명</string>
 	<string name="show_profile">프로필  보기</string>
 	<string name="write_recall">소환글 쓰기</string>
@@ -169,7 +169,7 @@
 	<string name="message_fail_overcount_tag">태그의 입력 가능한 글자 수를 넘어갔습니다.</string>
 	<string name="ok">확인</string>
 	<string name="closed_comment">댓글이 닫혀있습니다.</string>
-	<string name="alarm_recall">%s님이 소환글을 작성하였습니다.</string>	
+	<string name="alarm_recall">%s님이 소환글을 작성하였습니다.</string>
 	<string name="alarm_mailet">%s님의 쪽지가 도착하였습니다.</string>
 	<string name="network_error_msg">네트워크 연결을 확인해 주세요.</string>
 	<string name="more">더 보기</string>
@@ -209,7 +209,7 @@
 	<string name="search_keyword_clear">키워드 해제</string>
 	<string name="writeband_hint">%s 밴드에 남길 글을 작성해 주세요.</string>
 	<string name="band_empty_message1">미투밴드 또는 밴드글이 없습니다.</string>
-	<string name="bandsetting_empty_message1">가입한 미투밴드가 없습니다.</string>	
+	<string name="bandsetting_empty_message1">가입한 미투밴드가 없습니다.</string>
 	<string name="band_empty_message2">미투데이 사이트 환경설정 메뉴에서 미투밴드를\n만드신 후 친구들을 초대하실 수 있습니다.</string>
 	<string name="setting_my_post">내가 쓴 글</string>
 	<string name="setting_friend_post">친구가 쓴 글</string>
@@ -226,7 +226,7 @@
 	<string name="search">찾아보는</string>
 	<string name="metoo_suffix">%s님이</string>
 	<string name="search_action">검색하기</string>
-	<string name="search_remove">삭제하기</string>	
+	<string name="search_remove">삭제하기</string>
 	<string name="no_keyword">등록된 키워드가 없습니다.</string>
 	<string name="close_comment">댓글 닫기</string>
 	<string name="modify_tag">태그 수정</string>
@@ -243,17 +243,17 @@
 	<string name="message_sended_file_error">지원하지 않는 파일 형식입니다.</string>
 	<string name="message_join_complete">회원가입이 완료되었습니다.</string>
 	<string name="message_service_prepare">서비스 점검 중입니다.</string>
-	
+
 	<!-- IntroActivity -->
 	<string name="intro_join">회원가입</string>
 	<string name="intro_more_info">미투데이가 궁금하다면</string>
 	<string name="intro_view_intro_video">소개영상 보기</string>
-	
+
 	<!-- Me2dayLogin -->
 	<string name="naver_login">네이버</string>
 	<string name="metoo_login">미투데이</string>
 	<string name="openid_login">오픈아이디</string>
-	
+
 	<string name="naver_id">네이버 아이디</string>
 	<string name="naver_pwd">네이버 비밀번호</string>
 	<string name="metoo_addr_prefix">me2day.net/</string>
@@ -261,7 +261,7 @@
 	<string name="metoo_pwd">미투데이 비밀번호</string>
 	<string name="openid_addr">미투데이 주소</string>
 	<string name="openid_pwd">미투데이 비밀번호</string>
-	
+
 	<string name="account_forgot">아이디나 비밀번호가 기억나지 않으세요?</string>
 	<string name="not_support_openid">오픈아이디 지원이 종료될 예정입니다.</string>
 	<string name="naver_guide">컴퓨터에서 네이버(http://www.naver.com)에 연결 하시면 아이디/비밀번호 찾기를 하실 수 있습니다.</string>
@@ -277,7 +277,7 @@
 	<string name="connect_3G_body">Wi-Fi 접속이 되어있지 않은 경우 3G 접속 요금이 부과됩니다. 동영상을 재생하시겠습니까?</string>
 	<string name="all_friend_list_loading">친구목록을 가져오는 중입니다.</string>
 	<string name="input_description">한줄 소개를 입력해 주세요.</string>
-	
+
 	<string name="poi_set_type">위치 지정 방식</string>
 	<string name="poi_select_spot">장소 선택</string>
 	<string name="poi_set_current_loc">현재 위치 좌표 </string>
@@ -300,22 +300,25 @@
 	<string name="poi_err_disable_call">현재는 전화통화를 하실 수 없습니다.</string>
 	<string name="related_post">관련 이야기</string>
 	<string name="config_alram_noti">알림 설정 On 시, 데이터 요금이 부과되고 배터리 소모에 영향을 미칠 수 있습니다.</string>
-	
+
 	<!-- 친구들과 메뉴 다이얼로그 -->
 	<string name="mentioned_all">모든 글</string>
 	<string name="mentioned_reply">받은 댓글</string>
 	<string name="mentioned_remained">남긴 댓글</string>
-	<string name="mentioned_recall">소환받은 글</string>		
+	<string name="mentioned_recall">소환받은 글</string>
 	<string name="mentioned_metoo">미투한 글</string>
-	<string name="mentioned_dialog">카테고리 선택</string>	
-	
+	<string name="mentioned_dialog">카테고리 선택</string>
+
 	<!-- me2phot 사진저장 -->
-	<string name="photo_save_success">성공적으로 사진이 저장되었습니다.</string>	
-	<string name="photo_save_fail">사진저장 중 오류가 발생 되었습니다.</string>	
-	<string name="photo_save_fileNotFound">SD 카드 저장소가 준비되지 않았습니다.</string>	
-	<string name="photo_save">저장</string>	
-	<string name="photo_option_save">미투포토 저장</string>	
+	<string name="photo_save_success">성공적으로 사진이 저장되었습니다.</string>
+	<string name="photo_save_fail">사진저장 중 오류가 발생 되었습니다.</string>
+	<string name="photo_save_fileNotFound">SD 카드 저장소가 준비되지 않았습니다.</string>
+	<string name="photo_save">저장</string>
+	<string name="photo_option_save">미투포토 저장</string>
 	<!-- 공지 사항 -->
-	<string name="notice_never">다시 보지 않기</string>	
-	<string name="notice_close">닫기</string>	
+	<string name="notice_never">다시 보지 않기</string>
+	<string name="notice_close">닫기</string>
+
+	<string name="start">시작하기</string>
+	<string name="start_guide">시작하시려면 아래 버튼을 누르세요.</string>
 </resources>

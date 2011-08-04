@@ -56,28 +56,27 @@ public class LoginWebActivity extends Activity {
 
 	public static final int LOGIN_SUCCESS = 1;
 	public static final int LOGIN_FAIL = 2;
-	
+
 	public static final String category = "LoginWebActivity";	//DANIEL
-	public static final String PARAM_LOGIN_ID = "loginId";
 	public static final String PARAM_URL = "url";
 	public static final String PARAM_TOKEN = "token";
 	public static final String PARAM_ASIG = "asig";
-	
+
 	private WebView loginWebview;
 	private LinearLayout completeView;
 	ProgressDialog progressDialog;
-	
+
 	private boolean isLoginComplete;
 	private String currentURL;
-	private int oldOrientation = -1;	
-	
+	private int oldOrientation = -1;
+
 	private GetFullAuthTokenWorker workerGetFullAuthToken;
 	private static int webViewFailCount = 0;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Utility.d(category, ">>> Called onCreate()");
-		requestWindowFeature(Window.FEATURE_NO_TITLE);		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.loginweb);
 		isLoginComplete = false;
@@ -87,33 +86,33 @@ public class LoginWebActivity extends Activity {
 		completeView.setVisibility(View.GONE);
 		loginWebview.getSettings().setJavaScriptEnabled(true);
 		loginWebview.setWebViewClient(new WebViewClient() {
-					
+
 			@Override
 			public void onPageFinished(WebView view, String url) {
 				Utility.d(category, ">>> Called onPageFinished(), url=" + url);
 				//super.onPageFinished(view, url);
 				onPageFinishLogin(url);
 			}
-			
+
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				Utility.d(category, ">>> Called shouldOverrideUrlLoading(), url=" + url);
-				
+
 				//http://me2day.net/api/auth_by_user_id_complete
 				//if (url.startsWith(Me2dayInfo.completeAuthUrl) == true) {
 				if (url.startsWith("http://me2day.net/api/auth_submit_popup") == true) {
 					//DANIEL : 2010-11-22
 					//Galaxy S 2.2 Froyo에서는 아래의 코드가 에러 유발
-					//상기의 onPageFinished() override 함수에서 아래 코드에 해당하는 내용을 처리함으로 
+					//상기의 onPageFinished() override 함수에서 아래 코드에 해당하는 내용을 처리함으로
 					//아래의 코드는 중복수행에 따른 주석처리함.
-					completeAuth(url); 
-					
+					completeAuth(url);
+
 				}	else {
 					view.loadUrl(url);
 				}
 				return true;
 			}
-			
+
 			//@Override
 			public void onPageStarted(WebView view, String url, Bitmap favicon)	{
 				Utility.d(category, ">>> Called onPageStarted(), url=" + url);
@@ -124,8 +123,8 @@ public class LoginWebActivity extends Activity {
 					updateLoginUI();
 				}
 			}
-			
-			
+
+
 			@Override
 			public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
 				Utility.d(category, ">>> Called onReceivedError(), errorCode=" + errorCode);
@@ -134,12 +133,12 @@ public class LoginWebActivity extends Activity {
 				// http오류가 발생했을 때 로그인 중 창이 계속 떠있고,
 				// Back Key처리가 안되는 현상 처리
 				if (progressDialog != null) {
-					progressDialog.setCancelable(true);	
+					progressDialog.setCancelable(true);
 				} else {
 					Utility.d(category, ">>> onReceivedError(), webViewFailCount=" + webViewFailCount);
 					if (webViewFailCount >= 2 ){
 						Utility.d(category, ">>> onReceivedError(), Fail to connect server");
-						
+
 						//3번이상 Connection Error가 발생하였을 경우, 아이디 입력화면으로 전환.
 						webViewFailCount = 0;
 						view.goBack();
@@ -147,31 +146,31 @@ public class LoginWebActivity extends Activity {
 						webViewFailCount++;
 						Utility.d(category, ">>> onReceivedError(), Retry(" + webViewFailCount + ") to connect server" );
 						loginWebview.loadUrl(failingUrl);
-					}	
+					}
 				}
 			}
 		});
-		
+
 		Intent intent = this.getIntent();
 		String url = intent.getStringExtra(LoginWebActivity.PARAM_URL);
 		Utility.d("LoginWebActivity", String.format("loginUrl %s", url.toString()));
-		currentURL = url.toString();		
-		loginWebview.loadUrl(currentURL);		
+		currentURL = url.toString();
+		loginWebview.loadUrl(currentURL);
 	}
-	
+
 	@Override
-	public void onConfigurationChanged(Configuration newConfig) {	
+	public void onConfigurationChanged(Configuration newConfig) {
 		Utility.d(category, ">>> Called onConfigurationChanged()");
 		if (oldOrientation == newConfig.orientation) {
 			super.onConfigurationChanged(newConfig);
 			return;
-		}			
-		oldOrientation = newConfig.orientation;			
+		}
+		oldOrientation = newConfig.orientation;
     	super.onConfigurationChanged(newConfig);
     	if(isLoginComplete)
     		updateLoginUI();
     }
-	
+
 	private void updateLoginUI()	{
 		Utility.d(category, ">>> Called updateLoginUI()");
 		setContentView(R.layout.loginweb);
@@ -179,22 +178,22 @@ public class LoginWebActivity extends Activity {
 		loginWebview = (WebView)this.findViewById(R.id.login_web);
 		loginWebview.setVerticalScrollbarOverlay(true);
 		completeView = (LinearLayout)this.findViewById(R.id.complete_view);
-		
+
 		if(isLoginComplete)	{
 			loginWebview.setVisibility(View.GONE);
 			completeView.setVisibility(View.VISIBLE);
-		
+
 		}	else	{
 			loginWebview.setVisibility(View.VISIBLE);
 			completeView.setVisibility(View.GONE);
 		}
-		
+
 		if(currentURL != null && currentURL.length() > 0)	{
 			loginWebview.loadUrl(currentURL);
 		}
-		
+
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		Utility.d(category, ">>> Called onDestroy()");
@@ -208,22 +207,22 @@ public class LoginWebActivity extends Activity {
 		}
 		if(completeView !=null)	{
 			completeView.removeAllViews();
-			completeView = null;		
+			completeView = null;
 		}
 		super.onDestroy();
 	}
-	@Override	
+	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		Utility.d(category, ">>> Called onKeyDown()");
 		if(keyCode == KeyEvent.KEYCODE_SEARCH)
-			return true;		
+			return true;
 		return super.onKeyDown(keyCode, event);
 	}
 	@Override
 	public boolean onSearchRequested()	{
 		return false;
-	}    
-	
+	}
+
 
 	/**
 	 * 로그인웹페이지 이외에는 프로그래스바를 활성화 시킨다.
@@ -234,12 +233,12 @@ public class LoginWebActivity extends Activity {
 		//if (url.startsWith(Me2dayInfo.completeAuthUrl) == true) {
 		if (url.startsWith("http://me2day.net/api/auth_submit_popup") == true) {
 			completeAuth(url);
-		} 
+		}
 	}
-	
+
     /**
      * Bearer Type별 네트워크 상태 정보 체크
-     * @return Bearer Type별 네트워크 상태 정보 
+     * @return Bearer Type별 네트워크 상태 정보
      */
     public boolean checkNetworkAvailable(){
     	Utility.d("BaseActivity", ">>> Called checkNetworkAvailable()");
@@ -264,10 +263,10 @@ public class LoginWebActivity extends Activity {
         }
         if(isNetworkAvailable == false)
         	showNetworkAlert();
-        
+
         return isNetworkAvailable;
     }
-    
+
     /**
      * 네트워크 상태가 이용 불가능일 경우, Alert Dialog 띄워줌.
      */
@@ -291,79 +290,79 @@ public class LoginWebActivity extends Activity {
 		});
 		adb.show();
     }
-    
+
 	/**
 	 * 로그인 완료페이지가 성공이면 full token을 얻는다.
 	 */
 	private void completeAuth(String url) {
 		Utility.d(category, ">>> Called completeAuth(), url=" + url);
-		
+
     	// Network Available check.
     	if(checkNetworkAvailable() == false){
 			if (progressDialog != null) {
 				progressDialog.hide();
 			}
-    		return; 
+    		return;
     	}
-    	
+
 	    getFullAuthToken();
 	}
-	
+
 	private boolean getFullAuthToken() {
 		Utility.d(category, ">>> Called getFullAuthToken()");
-		
+
 		boolean loginsuccess = false;
 		Intent intent = this.getIntent();
 		String token = intent.getStringExtra(LoginWebActivity.PARAM_TOKEN);
-		workerGetFullAuthToken = GetFullAuthTokenWorker.getInstance();		
-		
-		try {								
+		workerGetFullAuthToken = GetFullAuthTokenWorker.getInstance();
+
+		try {
 			HttpParams params = new BasicHttpParams();
-			HttpConnectionParams.setConnectionTimeout(params, Me2dayInfo.TIMEOUT);  
-			HttpConnectionParams.setSoTimeout(params, Me2dayInfo.TIMEOUT); 
-			
+			HttpConnectionParams.setConnectionTimeout(params, Me2dayInfo.TIMEOUT);
+			HttpConnectionParams.setSoTimeout(params, Me2dayInfo.TIMEOUT);
+
 			DefaultHttpClient httpClient = new DefaultHttpClient(params);
 			HttpRequestBase method = createHttpMehtod(GetFullAuthTokenWorker.get_full_auth_token(token));
-			
+
 			// configure http header
 			settingHttpClient(method, httpClient);
-		
+
 			HttpResponse response = httpClient.execute(method);
 			InputStream in = response.getEntity().getContent();
-	
+
 			String xmlMessage = Utility.convertStreamToString(in);
 			in = new StringBufferInputStream(xmlMessage);
-			
+
 			int responseCode = response.getStatusLine().getStatusCode();
 			Utility.d(category, String.format("Response Code = %d", responseCode));
-			
-			//Http Status Code가 200일때만 성공으로 취급한다. 
+
+			//Http Status Code가 200일때만 성공으로 취급한다.
 			if (responseCode != HttpURLConnection.HTTP_OK) {
-				Utility.d(category, String.format("onClickLoginUsingOpenid(), Error(%d, %s) message(%s)", 
+				Utility.d(category, String.format("onClickLoginUsingOpenid(), Error(%d, %s) message(%s)",
 						responseCode, response.getStatusLine().getReasonPhrase(), xmlMessage));
 				workerGetFullAuthToken.onError(response, in);
 				return false;
 			}
-			
+
 			Utility.d(category, xmlMessage);
 			workerGetFullAuthToken.onSuccess( response, in );
-			
+
 		    if ( workerGetFullAuthToken.ishttpok()==true ) {
 		        String returnToken = workerGetFullAuthToken.getReturnToken();
-		        
+
 				if (returnToken != null && returnToken.length()>0) {
 					loginsuccess = true;
-					loginSuccess(returnToken);	        					
+					loginSuccess(returnToken);
 				} else {
 					loginsuccess = false;
 				}
-			}	
-		    
+			}
+
 			if (loginsuccess == false) {
 				Toast.makeText(LoginWebActivity.this, LoginWebActivity.this.getString(R.string.message_unknown_error), Toast.LENGTH_SHORT).show();
 				LoginWebActivity.this.setResult(LoginWebActivity.LOGIN_FAIL);
 				LoginWebActivity.this.finish();
-			}		
+			}
 		}
 		catch (SocketTimeoutException timeoutEx) {
 			timeoutEx.printStackTrace();
@@ -377,9 +376,9 @@ public class LoginWebActivity extends Activity {
 			e.printStackTrace();
 			return false;
 		}
-		return true;	
+		return true;
 	}
-	
+
 	/**
 	 * HttpMethod(Get, Post)를 선택한다.
 	 */
@@ -387,22 +386,22 @@ public class LoginWebActivity extends Activity {
 		Utility.d(category, "Called createHttpMehtod(), url=" + url);
 		return new HttpGet(url);
 	}
-	
+
 	/*
-	 * HTTP Request Header Parameter를 설정한다.  
+	 * HTTP Request Header Parameter를 설정한다.
 	 */
 	private void settingHttpClient(AbstractHttpMessage methodPost, DefaultHttpClient httpClient) {
 		String aKey = Me2dayInfo.APP_KEY;
 		methodPost.setHeader("Me2_application_key", aKey);
-		
+
 //		String aSig = Utility.getAppSig();
 //		methodPost.setHeader("Me2_asig", aSig);
 //		methodPost.setHeader("User_Agent", Me2dayInfo.getUerAgent());
 	}
-	
+
 	private void loginSuccess(String fullAuthtoken) {
 		Utility.d(category, ">>> Called loginSuccess()");
 		this.setResult(LOGIN_SUCCESS);
 		LoginWebActivity.this.finish();
-	}	
+	}
 }
